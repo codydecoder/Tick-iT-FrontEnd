@@ -28,5 +28,5 @@ Back-End:
 Clora Vernon - [CV2Tre](https://github.com/CV2Tre)\
 Cody Cadena - [CodyDecoder](https://github.com/codydecoder)\
 Daisy Ban - [toddlf705](https://github.com/toddlf705)\
-Joy Wu - [aquaj0y](https://github.com/aquaj0y)\
+Joy Wu - [aquaj0y](https://github.com/aquaj0y)
 
