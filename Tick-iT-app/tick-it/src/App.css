@@ -6,40 +6,110 @@
 }
 
 /* Header */ 
-
+a {
+  text-decoration: inherit;
+  color: inherit;
+  margin: inherit;
+  padding: inherit;
+  
+}
 .header-container {
   border: 4px solid #ef426f;
   outline: 2px solid #00b2a9;
-  display: flex;
-  justify-content: space-between;
   padding: 8px;
   background-color: lightsalmon;
+  display: grid;
+  
+}
+.header-title {
+  font-size: 48px;
+  border: 4px solid #ef426f;
+  outline: 2px solid #00b2a9;
+  padding: 10px;
+  margin: 8px;
+  background-color: white;
+  width: 40%;
+  font-weight: 900;
+  color: gray;
+  -webkit-text-stroke: 2px black;
+}
+.header-top {
+  display: flex;
+  justify-content: space-between;
 }
 #header-left {
-  border: 1px solid green;
+  border-radius: 8px;
   display: flex;
-
+  
 }
+
 #header-right {
   display: flex;
   justify-content: space-between;
   width: 50%;
 }
+
+#header-dropdown-button {
+  border: 2px solid #ef426f;
+  border-radius: 8px;
+  padding: 5px;
+  background-color: #00b2a9;
+  transition: background-color 0.2s ease;
+  transition: color 0.2s ease;
+}
+#header-dropdown-button:active {
+  background-color: #0e807a;
+  color: white;
+}
 .header-dropdown {
-  border: 1px solid blue;
   padding: 5px;
 }
+.search-bar {
+  display: grid;
+  grid-template-columns: 70% 25%;
+  grid-gap: 5%;
+  margin: 0;
+  margin-top: 10px;
+  margin-bottom: -5px;
+}
+#search-input {
+  background-color: rgba(255, 255, 255, 0.50);
+  padding: 5px;
+  border-radius: 4px;
+  border: 2px solid #ef426f;
+}
+#search-submit {
+  background-color: #00b2a9;
+  padding: 5px;
+  border-radius: 4px;
+  border: 2px solid #ef426f;
+  
+}
+#search-submit:hover {
+  background-color: #0e807a;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.25s ease;
+}
+
+
 .header-links {
   display: inline-block;
   padding: 5px;
-  background-color: rgba(255, 255, 255, 0.25);
+  background-color: rgba(255, 255, 255, 0.5);
   border-radius: 8px;
-  
+  justify-content: center;
+  align-content: center;
 }
 .header-links:hover {
   color: white;
   background-color: rgba(0, 0, 0, .5);
+  cursor: pointer;
+  transition: background-color 0.25s ease;
+  
 }
+
+
 
 
 /* Header */
