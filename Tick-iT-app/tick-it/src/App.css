@@ -42,13 +42,11 @@ a {
   display: flex;
   
 }
-
 #header-right {
   display: flex;
   justify-content: space-between;
   width: 50%;
 }
-
 #header-dropdown-button {
   border: 2px solid #ef426f;
   border-radius: 8px;
@@ -91,8 +89,6 @@ a {
   cursor: pointer;
   transition: background-color 0.25s ease;
 }
-
-
 .header-links {
   display: inline-block;
   padding: 5px;
@@ -109,8 +105,42 @@ a {
   
 }
 
-
-
-
 /* Header */
 
+/* Footer */
+
+.footer-container {
+  border: 4px solid #ef426f;
+  outline: 2px solid #00b2a9;
+  padding: 18px;
+  background-color: rgba(255, 160, 122, 1);
+
+}
+#footer-words {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+#footer-nav {
+  display: flex;
+  justify-content: space-between;
+}
+.footer-links {
+  display: inline-block;
+  border: 4px solid #ef426f;
+  padding: 8px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 8px;
+  font-size: 24px;
+  font-weight: 900;
+}
+.footer-links:hover {
+  outline: 2px solid #00b2a9;
+  background-color: rgba(0, 0, 0, .25);
+  text-decoration: underline;
+  text-decoration-color: #0e807a;
+}
+.footer-github {
+  font-size: 16px;
+}
+
+/* Footer */
