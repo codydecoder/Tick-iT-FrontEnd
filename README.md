@@ -11,6 +11,15 @@ We will utilize React to create out application. We intend to have a header, mai
 We primarily used Figma to plan out our design and implementation of our project.
 [OurFigma](https://www.figma.com/file/rECUf6O0dGg3XrBLmVHRq2/Tick-iT-website?type=whiteboard&node-id=0-1&t=5FReLOmuUkSx39WJ-0)
 
+
+
+<h2>Component Hierarchy </h2>
+<img src="hierarchy.jpg" width="500"></img>
+
+<h2>Wireframe </h2>
+<img src="wireframe.jpg" width="600"></img>
+
+
 ## Technologies Used
 Front-End:
 * HTML
