@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Pacifico&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+
 /* body {
   /* max-width: 1280px; */
 /* margin: 0 auto; */
@@ -186,3 +190,24 @@ a {
 }
 
 /* Footer */
+
+/* Venue Detail */
+
+.venue_container {
+  font-family: "Roboto Condensed", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.venue_container h2 {
+  font-family: "Lobster", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.venue_container img {
+  margin-top: 50px;
+}
+/* Venue Detail */
+
