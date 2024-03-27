@@ -1,13 +1,15 @@
+
+import Home from './Home'
+import {Route, Routes} from 'react-router-dom'
 import VenueList from './VenueList'
 import VenueDetails from './VenueDetails'
-import {Routes, Route} from 'react-router-dom'
 import React from 'react'
 import EventList from './EventList'
 import EventDetails from './EventDetails'
-import Home from './Home'
 
 
 function Main() {
+
   return (
     <div>
       <h1>This is Main Component</h1>

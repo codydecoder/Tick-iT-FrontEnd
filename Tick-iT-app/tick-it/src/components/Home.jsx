@@ -1,20 +1,25 @@
 import React from 'react';
 import axios from 'axios'
 import { useEffect, useState } from 'react'
-// import { useNavigate } from ‘react-router-dom’
+// import { useNavigate } from 'react-router-dom'
+
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, FreeMode, Pagination, Navigation } from 'swiper/modules';
+
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/free-mode';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
+
 export default function Home() {
   const [allVenues, setAllVenues] = useState([])
+
   useEffect(() => {
     const getAllVenues = async () => {
       let response = await axios.get(`http://127.0.0.1:8000/venues/`)
+
       console.log(response.data)
       const venuesArr = response.data
       setAllVenues(venuesArr)
