@@ -1,4 +1,9 @@
+
 body {
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Pacifico&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
   /* max-width: 1280px; */
 /* margin: 0 auto; */
 /* padding: 2rem; */
@@ -12,8 +17,8 @@ body {
 }
 .swiper-slide img {
   display: block;
+  height: 600px;
   width: 100%;
-  height: 100%;
   object-fit: cover;
 }
 
@@ -185,16 +190,94 @@ a {
 
 /* Footer */
 
+
 /* Swiper */
 .swiper-slide {
   position: relative;
+
+
+/* Venue List*/
+
+.venue-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+
 }
-.swiper-slide img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+
+.venue-card {
+  background-color: rgba(255, 160, 122, .5);
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
 }
+
+.venue-card h3 {
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+
+.upcoming-events {
+  list-style: none;
+}
+
+/* venue-details.css */
+
+.venue-details-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: rgba(255, 160, 122, .5);
+}
+
+.venue-details-container h2 {
+  margin-top: 0;
+}
+
+.venue-details-container p {
+  margin-bottom: 10px;
+}
+
+
+/* EventList.css */
+
+.event-list-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+
+}
+
+.event-item {
+  background-color: rgba(255, 160, 122, .5);
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+  
+}
+
+.event-item h2 {
+  margin-top: 0;
+  margin-bottom: 5px;
+  
+  
+}
+
+.bullet-point {
+  list-style: none;
+}
+
+/* EventDetails.css */
+
+.event-details-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: rgba(255, 160, 122, .5);
+}
+
 /* Swiper ends */
 
 /* Home */
@@ -215,3 +298,10 @@ a {
 
 
 /* Home */
+
+
+.event-details-container h1 {
+  margin-top: 0;
+}
+
+

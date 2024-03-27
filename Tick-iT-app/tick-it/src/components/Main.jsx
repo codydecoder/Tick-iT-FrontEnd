@@ -12,7 +12,6 @@ function Main() {
 
   return (
     <div>
-      <h1>This is Main Component</h1>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/events" element={<EventList />} />

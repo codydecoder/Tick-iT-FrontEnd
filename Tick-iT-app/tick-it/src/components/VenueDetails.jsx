@@ -25,7 +25,8 @@ export default function VenueDetails() {
 
   return (
     <div>
-      <div className="venue_container">
+      <div className="venue-details-container">
+      <div className="venue-container">
           <img src = {venues.image} width="550px"></img>
           <h2>{venues.name}</h2>
           <p>Parking: {venues.parking}</p>
@@ -33,6 +34,7 @@ export default function VenueDetails() {
           <p>{venues.description}</p>
           <p>Policies: {venues.policies}</p>
       </div>
+    </div>
     </div>
   )
 }

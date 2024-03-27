@@ -6,7 +6,7 @@ export default function VenueList() {
 
   const [venues, setVenues] = useState([])
   const [error, setError] = useState('')
-  const [events, setEvents] = useState('')
+  const [events, setEvents] = useState([])
   const { venueId } = useParams()
   const navigate = useNavigate()
 
@@ -15,7 +15,7 @@ export default function VenueList() {
     const getVenues = async () => {
       try{
         const response = await axios.get(`http://localhost:8000/venues`)
-        console.log(response.data)
+        // console.log(response.data)
         setVenues(response.data)
       } catch (error) {
         setError('Failed to get venues')
@@ -26,36 +26,37 @@ export default function VenueList() {
     const getEvents = async () => {
       try{
         const response = await axios.get(`http://localhost:8000/events`)
-        setEvents(response.data.filter(eventlist => eventlist.venue == 1))
+        console.log('line 29', response.data)
+
+        // setEvents(response.data.filter(eventlist => eventlist.venue == 1))
+
+        setEvents(response.data)
       } catch (error) {
         setError('Failed to get events')
         console.error(error)
       }
     }
-    console.log(events)
-
     getVenues()
     getEvents()
   }, [] )
 
 
   return (
-    <div>
+    <div className="venue-container">
       <h1>VENUES</h1>
-      <div className="venue_container">
+      <div>
           {venues.map( (venue) => (
-            <div key={venue.name} onClick={()=>(navigate (`/venues/${venue.id}`))}>
-              <div className='venue_info'>
+            <div key={venue.name} onClick={()=>(navigate (`/venues/${venue.id}`))} className='venue-card'>
+              <div className='venue-info'>
                 <h3>{venue.name}</h3>
                 <img src = {venue.image} width="300px"></img>
                 <p>{venue.address}</p>
+                <p>Venue ID {venue.id}</p>
               </div>
 
-              <div className='upcoming_events'>
-                <h3>March</h3>
-                {events.map((eventlist) => (
-                  <div>{eventlist.name}</div>
-                ))}
+              <div className='upcoming-events'>
+                {events.filter((event) => event.venue === venue.id).map((venueEvent =>             (<div key={venueEvent.name}>{venueEvent.name}</div>)))}
+
               </div>
 
             </div>

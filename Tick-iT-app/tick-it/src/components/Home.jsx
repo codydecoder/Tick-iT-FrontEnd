@@ -47,7 +47,7 @@ export default function Home() {
           <div className="venue-card" key={venue}>
             {/* Notes from last project: */}
             {/* <SwiperSlide onClick={() => showItem(drink.idDrink)}><img src={drink.strDrinkThumb} alt='pic' /><p className="drink-name">{drink.strDrink}</p></SwiperSlide> */}
-            <SwiperSlide ><img src={venue.image} alt='pic' /></SwiperSlide>
+            <SwiperSlide ><img src={venue.image} className ='slider-img' alt='pic'/></SwiperSlide>
           </div>
         ))}
       </Swiper>
