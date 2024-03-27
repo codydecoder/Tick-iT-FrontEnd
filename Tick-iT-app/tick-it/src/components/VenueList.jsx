@@ -7,8 +7,11 @@ export default function VenueList() {
   const [venues, setVenues] = useState([])
   const [error, setError] = useState('')
   const [events, setEvents] = useState('')
-  const { venueId } = useParams()
+
   const navigate = useNavigate()
+  let showItem = (id) => {
+    navigate(`/venues/${id}`)
+  }
 
 
   useEffect(() => {
@@ -44,7 +47,7 @@ export default function VenueList() {
       <h1>VENUES</h1>
       <div className="venue_container">
           {venues.map( (venue) => (
-            <div key={venue.name} onClick={()=>(navigate (`/venues/${venue.id}`))}>
+            <div key={venue.name} onClick={()=> showItem(venue.id)}>
               <div className='venue_info'>
                 <h3>{venue.name}</h3>
                 <img src = {venue.image} width="300px"></img>

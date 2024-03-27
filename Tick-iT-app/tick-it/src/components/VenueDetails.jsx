@@ -8,20 +8,38 @@ export default function VenueDetails() {
   const [error, setError] = useState('')
   const { venueId } = useParams()
 
+  // useEffect(() => {
+  //   const getVenues = async () => {
+  //     try{
+  //       const response = await axios.get(`http://localhost:8000/venues/${venueId}`)
+  //       console.log('what is line 15', response.data)
+  //       setVenues(response.data)
+  //     } catch (error) {
+  //       setError('Failed to get venues')
+  //       console.error(error)
+  //     }
+  //   }
+
+  //   getVenues()
+  // }, [] )
+
+
   useEffect(() => {
-    const getVenues = async () => {
-      try{
-        const response = await axios.get(`http://localhost:8000/venues/${venueId}`)
+    const getEvents = async () => {
+      try {
+        const response = await axios.get(`http://127.0.0.1:8000/events/`)
+
         console.log(response.data)
-        setVenues(response.data)
+
+
       } catch (error) {
         setError('Failed to get venues')
         console.error(error)
       }
     }
+    getEvents()
+  }, [])
 
-    getVenues()
-  }, [] )
 
   return (
     <div>
