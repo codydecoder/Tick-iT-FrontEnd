@@ -1,17 +1,18 @@
 import React from 'react'
 import EventList from './EventList'
 import EventDetails from './EventDetails'
-import {Routes, Route } from 'react-router-dom'
+import { Routes, Route } from 'react-router-dom'
 
-export default function Main() {
+function Main() {
   return (
     <div>
       <h1>This is Main Component</h1>
       <Routes>
-        <Route path='/events' element = {<EventList/>}/>
-        <Route exact path="/" component={EventList} />
-        <Route path="/events/:id" component={EventDetails} />
+        <Route path="/events" element={<EventList />} />
+        <Route path="/events/:id" element={<EventDetails />} />
       </Routes>
     </div>
   )
 }
+
+export default Main
