@@ -4,7 +4,7 @@ import {Routes, Route} from 'react-router-dom'
 import React from 'react'
 import EventList from './EventList'
 import EventDetails from './EventDetails'
-import { Routes, Route } from 'react-router-dom'
+import {Routes, Route} from 'react-router-dom'
 
 
 function Main() {
