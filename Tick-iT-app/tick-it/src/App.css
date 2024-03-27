@@ -191,6 +191,7 @@ a {
 
 /* Footer */
 
+
 /* Venue Detail */
 
 .venue_container {
@@ -210,4 +211,47 @@ a {
   margin-top: 50px;
 }
 /* Venue Detail */
+
+
+/* EventList.css */
+
+.event-list-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+
+}
+
+.event-item {
+  background-color: rgba(255, 160, 122, .5);
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+  
+}
+
+.event-item h2 {
+  margin-top: 0;
+  margin-bottom: 5px;
+  
+  
+}
+
+.bullet-point {
+  list-style: none;
+}
+
+/* EventDetails.css */
+
+.event-details-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: rgba(255, 160, 122, .5);
+}
+
+.event-details-container h1 {
+  margin-top: 0;
+}
 
