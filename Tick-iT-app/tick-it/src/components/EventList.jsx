@@ -1,5 +1,6 @@
 import React, { useState, useEffect }from "react";
 import axios from "axios";
+import { Link, useParams } from "react-router-dom"
 
 
 function EventList() {
@@ -18,6 +19,7 @@ function EventList() {
     getAllEvents()
   }, []);
 
+  
   return (
     <div>
       <h1>Event List</h1>
@@ -29,7 +31,9 @@ function EventList() {
             <p>Time: {event.time}</p>
             <p>Description: {event.description}</p>
             <p>Venue: {event.venue}</p>
-            <img src={event.image} alt={event.name} style={{maxWidth: '100%'}} />
+            <Link to={`/events/${event.id}`}>
+              <img src={event.image} alt={event.name} style={{maxWidth: '100%'}} />
+            </Link>
           </li>
         ))}
       </ul>
