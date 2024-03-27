@@ -27,7 +27,7 @@ export default function Home() {
     getAllVenues()
   }, [])
   return (
-    <>
+    <div className='home'>
       {/* <div className=‘venues’> */}
       <Swiper
         // slidesPerView={3}
@@ -58,6 +58,6 @@ export default function Home() {
           <div><img className='venue-image' src={venue.image} alt='pic' /><p className="venue-name">{venue.name}</p></div>
         ))}
       </div>
-    </>
+    </div>
   )
 }

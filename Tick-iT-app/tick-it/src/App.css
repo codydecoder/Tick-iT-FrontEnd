@@ -1,20 +1,20 @@
+
+body {
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Pacifico&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
 
-
-/* body {
   /* max-width: 1280px; */
 /* margin: 0 auto; */
 /* padding: 2rem; */
 /* text-align: center; */
-/* } */
+/* }
 
 /* Swiper */
 
 .swiper-slide {
   position: relative;
 }
-
 .swiper-slide img {
   display: block;
   height: 600px;
@@ -32,12 +32,12 @@
   gap: 2%;
   border: 1px solid black;
 }
-
 #venue-image {
   width: 100px;
 }
 
 /* Header */ 
+
 a {
   text-decoration: inherit;
   color: inherit;
@@ -78,7 +78,6 @@ a {
   margin-left: -15px;
   border-top: 3px solid #ef426f;
 }
-
 .header-top {
   display: flex;
   justify-content: space-between;
@@ -192,6 +191,11 @@ a {
 /* Footer */
 
 
+/* Swiper */
+.swiper-slide {
+  position: relative;
+
+
 /* Venue List*/
 
 .venue-container {
@@ -199,6 +203,7 @@ a {
   margin: 0 auto;
   padding: 20px;
   text-align: center;
+
 }
 
 .venue-card {
@@ -273,7 +278,30 @@ a {
   background-color: rgba(255, 160, 122, .5);
 }
 
+/* Swiper ends */
+
+/* Home */
+
+.home {
+  border: 5px solid #00b2a9;
+  outline: 2px solid #ef426f;
+
+}
+.venue-card {}
+.all-venues {}
+.venue-image {
+  object-fit: contain;
+  height: 100%;
+  width: 100%;
+}
+.venue-name {}
+
+
+/* Home */
+
+
 .event-details-container h1 {
   margin-top: 0;
 }
+
 
