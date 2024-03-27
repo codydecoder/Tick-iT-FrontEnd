@@ -21,11 +21,12 @@ function EventList() {
 
   
   return (
-    <div>
+    <div className="event-list-container">
       <h1>Event List</h1>
-      <ul>
+      <ul className="bullet-point">
         {events.map(event => (
           <li key={event.id}>
+            <div className="event-item">
             <h2>{event.name}</h2>
             <p>Date: {event.date}</p>
             <p>Time: {event.time}</p>
@@ -34,6 +35,7 @@ function EventList() {
             <Link to={`/events/${event.id}`}>
               <img src={event.image} alt={event.name} style={{maxWidth: '100%'}} />
             </Link>
+            </div>
           </li>
         ))}
       </ul>

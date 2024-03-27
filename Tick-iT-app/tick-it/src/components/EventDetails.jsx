@@ -27,7 +27,7 @@ function EventDetails({match}) {
  }
 
   return (
-    <div>
+    <div className="event-details-container">
       <h1>{event.name}</h1>
       <p>Date: {event.date}</p>
       <p>Time: {event.time}</p>
