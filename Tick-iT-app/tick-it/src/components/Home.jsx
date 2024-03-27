@@ -4,4 +4,4 @@ export default function Home() {
       <h1>This is Home Component</h1>
     </div>
   )
-}
+} 
