@@ -7,7 +7,7 @@ export default function Header() {
 
   return (
     <div className="header-container">
-      <Link className="header-title">Tick-iT</Link>
+      <Link className="header-title" to="/">Tick-iT</Link>
       <div className='header-top'>
         <div id='header-left'>
           <div className="header-dropdown" >
