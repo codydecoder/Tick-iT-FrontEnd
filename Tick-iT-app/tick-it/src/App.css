@@ -192,25 +192,47 @@ a {
 /* Footer */
 
 
-/* Venue Detail */
+/* Venue List*/
 
-.venue_container {
-  font-family: "Roboto Condensed", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
+.venue-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
 }
 
-.venue_container h2 {
-  font-family: "Lobster", sans-serif;
-  font-weight: 400;
-  font-style: normal;
+.venue-card {
+  background-color: rgba(255, 160, 122, .5);
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
 }
 
-.venue_container img {
-  margin-top: 50px;
+.venue-card h3 {
+  margin-top: 0;
+  margin-bottom: 5px;
 }
-/* Venue Detail */
+
+.upcoming-events {
+  list-style: none;
+}
+
+/* venue-details.css */
+
+.venue-details-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: rgba(255, 160, 122, .5);
+}
+
+.venue-details-container h2 {
+  margin-top: 0;
+}
+
+.venue-details-container p {
+  margin-bottom: 10px;
+}
 
 
 /* EventList.css */
