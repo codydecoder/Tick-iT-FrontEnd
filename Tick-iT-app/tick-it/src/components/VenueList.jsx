@@ -42,19 +42,19 @@ export default function VenueList() {
 
 
   return (
-    <div>
+    <div className="venue-container">
       <h1>VENUES</h1>
-      <div className="venue_container">
+      <div>
           {venues.map( (venue) => (
-            <div key={venue.name} onClick={()=>(navigate (`/venues/${venue.id}`))}>
-              <div className='venue_info'>
+            <div key={venue.name} onClick={()=>(navigate (`/venues/${venue.id}`))} className='venue-card'>
+              <div className='venue-info'>
                 <h3>{venue.name}</h3>
                 <img src = {venue.image} width="300px"></img>
                 <p>{venue.address}</p>
                 <p>Venue ID {venue.id}</p>
               </div>
 
-              <div className='upcoming_events'>
+              <div className='upcoming-events'>
                 {events.filter((event) => event.venue === venue.id).map((venueEvent =>             (<div key={venueEvent.name}>{venueEvent.name}</div>)))}
 
               </div>
