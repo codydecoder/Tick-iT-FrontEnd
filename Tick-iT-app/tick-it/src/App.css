@@ -178,8 +178,12 @@ a {
 
 }
 #footer-words {
-  font-size: 24px;
+  font-size: 32px;
   margin-bottom: 15px;
+  font-family: "Big Shoulders Text", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  -webkit-text-stroke: 1px #00b2a9;
 }
 #footer-nav {
   display: flex;
@@ -193,6 +197,7 @@ a {
   border-radius: 8px;
   font-size: 24px;
   font-weight: 900;
+  font-family: "Bad Script", cursive;
 }
 .footer-links:hover {
   outline: 2px solid #00b2a9;
@@ -202,6 +207,8 @@ a {
 }
 .footer-github {
   font-size: 16px;
+  font-family: "Big Shoulders Text", sans-serif;
+  font-optical-sizing: auto;
 }
 
 /* Footer */
@@ -238,6 +245,8 @@ a {
   list-style: none;
 }
 
+/* Venue List */
+
 /* venue-details.css */
 
 .venue-details-container {
@@ -255,6 +264,7 @@ a {
   margin-bottom: 10px;
 }
 
+/* Venue Details */
 
 /* EventList.css */
 
@@ -271,19 +281,28 @@ a {
   border-radius: 5px;
   padding: 10px;
   margin-bottom: 10px;
-  
+  font-family: "Big Shoulders Text", sans-serif;
+  font-optical-sizing: auto;
 }
-
 .event-item h2 {
   margin-top: 0;
   margin-bottom: 5px;
   
-  
 }
+
+.event-list-title {}
+.event-list-date {}
+.event-list-time {}
+.event-list-price {}
+.event-list-description {}
+.event-list-venue {}
+
 
 .bullet-point {
   list-style: none;
 }
+
+/* Event List */
 
 /* EventDetails.css */
 
@@ -293,6 +312,8 @@ a {
   padding: 20px;
   background-color: rgba(255, 160, 122, .5);
 }
+
+/* Event Details */
 
 /* Swiper ends */
 
