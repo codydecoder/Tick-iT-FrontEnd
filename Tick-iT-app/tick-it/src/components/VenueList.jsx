@@ -54,7 +54,7 @@ export default function VenueList() {
               </div>
 
               <div className='upcoming-events'>
-                <h3>MARCH</h3>
+                <h3>Upcoming Events</h3>
                 {events.filter((event) => event.venue === venue.id).map((venueEvent =>             (<div key={venueEvent.name} className="upcoming-list">{venueEvent.name}</div>)))}
               </div>
 
