@@ -1,11 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Pacifico&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
 
+
+
 body {
   max-width: 1400px;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+  background: linear-gradient(144deg, rgba(239,66,111,1) 26%, rgba(0,178,169,1) 64%, rgba(14,128,122,1) 100%);
 }
 
 /* Swiper */
