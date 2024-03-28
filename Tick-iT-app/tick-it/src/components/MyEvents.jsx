@@ -8,7 +8,7 @@ export default function MyEvents() {
 
   return (
     <div>
-      <h1>This is myEvents Component</h1>
+      <h1>No Saved Events</h1>
    </div>
   )
 }
