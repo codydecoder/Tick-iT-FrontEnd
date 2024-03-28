@@ -1,11 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Pacifico&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
 
-  /* max-width: 1280px; */
-/* margin: 0 auto; */
-/* padding: 2rem; */
-/* text-align: center; */
-/* }
+body {
+  max-width: 1280px; 
+  margin: 0 auto; 
+  padding: 2rem; 
+  text-align: center; 
+}
 
 /* Swiper */
 
@@ -65,6 +66,7 @@ a {
   font-weight: 900;
   color: gray;
   -webkit-text-stroke: 2px black;
+  
 }
 #header-logo-barcode {
   display: inline-block;
@@ -96,10 +98,19 @@ a {
   background-color: #00b2a9;
   transition: background-color 0.2s ease;
   transition: color 0.2s ease;
+  font-family: "Big Shoulders Text", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
 }
 #header-dropdown-button:active {
   background-color: #0e807a;
   color: white;
+}
+#header-dropdown-button:hover {
+  background-color: #0e807a;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.25s ease;
 }
 .header-dropdown {
   padding: 5px;
@@ -117,13 +128,17 @@ a {
   padding: 5px;
   border-radius: 4px;
   border: 2px solid #ef426f;
+  font-family: "Big Shoulders Text", sans-serif;
+  font-optical-sizing: auto;
+
 }
 #search-submit {
   background-color: #00b2a9;
   padding: 5px;
   border-radius: 4px;
   border: 2px solid #ef426f;
-  
+  font-family: "Big Shoulders Text", sans-serif;
+  font-optical-sizing: auto;
 }
 #search-submit:hover {
   background-color: #0e807a;
@@ -138,13 +153,17 @@ a {
   border-radius: 8px;
   justify-content: center;
   align-content: center;
+  font-family: "Bad Script", cursive;
+  font-weight: 900;
+  
 }
 .header-links:hover {
   color: white;
   background-color: rgba(0, 0, 0, .5);
   cursor: pointer;
   transition: background-color 0.25s ease;
-  
+  text-shadow: 0 0 5px #ef426f;
+  outline: 2px solid #00b2a9;
 }
 
 /* Header */
@@ -159,8 +178,12 @@ a {
 
 }
 #footer-words {
-  font-size: 24px;
+  font-size: 32px;
   margin-bottom: 15px;
+  font-family: "Big Shoulders Text", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  -webkit-text-stroke: 1px #00b2a9;
 }
 #footer-nav {
   display: flex;
@@ -174,6 +197,7 @@ a {
   border-radius: 8px;
   font-size: 24px;
   font-weight: 900;
+  font-family: "Bad Script", cursive;
 }
 .footer-links:hover {
   outline: 2px solid #00b2a9;
@@ -183,6 +207,8 @@ a {
 }
 .footer-github {
   font-size: 16px;
+  font-family: "Big Shoulders Text", sans-serif;
+  font-optical-sizing: auto;
 }
 
 /* Footer */
@@ -235,21 +261,9 @@ a {
   width: 350px;
   height: 260px;
   list-style: none;
-  background-color: rgb(162, 162, 162, 0.5);
-  padding: 10px;
-  border-radius: 8px;
-  font-size: 20px;
 }
 
-.upcoming-list{
-  background-color: rgba(255, 255, 255, 0.9);
-  height: 60px;
-  margin: 5px 0px 5px 0px;
-  margin-top: 10px;
-  padding: 5px;
-  line-height: 60px;
-  overflow: scroll;
-}
+/* Venue List */
 
 /* venue-details.css */
 
@@ -268,17 +282,7 @@ a {
   margin-bottom: 10px;
 }
 
-.data-lines{
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  padding: 7px;
-  width: 720px;
-}
-
-.data-lines p {
-  text-align: left;
-}
-
+/* Venue Details */
 
 /* EventList.css */
 
@@ -295,19 +299,28 @@ a {
   border-radius: 5px;
   padding: 10px;
   margin-bottom: 10px;
-  
+  font-family: "Big Shoulders Text", sans-serif;
+  font-optical-sizing: auto;
 }
-
 .event-item h2 {
   margin-top: 0;
   margin-bottom: 5px;
   
-  
 }
+
+.event-list-title {}
+.event-list-date {}
+.event-list-time {}
+.event-list-price {}
+.event-list-description {}
+.event-list-venue {}
+
 
 .bullet-point {
   list-style: none;
 }
+
+/* Event List */
 
 /* EventDetails.css */
 
@@ -317,6 +330,8 @@ a {
   padding: 20px;
   background-color: rgba(255, 160, 122, .5);
 }
+
+/* Event Details */
 
 /* Swiper ends */
 
