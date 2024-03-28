@@ -30,6 +30,7 @@ function EventList() {
             <h2>{event.name}</h2>
             <p>Date: {event.date}</p>
             <p>Time: {event.time}</p>
+            <p>Price: {event.price}</p>
             <p>Description: {event.description}</p>
             <p>Venue: {event.venue}</p>
             <Link to={`/events/${event.id}`}>
