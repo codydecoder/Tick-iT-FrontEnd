@@ -1,11 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Pacifico&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
 
-  /* max-width: 1280px; */
-/* margin: 0 auto; */
-/* padding: 2rem; */
-/* text-align: center; */
-/* }
+body {
+  max-width: 1280px; 
+  margin: 0 auto; 
+  padding: 2rem; 
+  text-align: center; 
+}
 
 /* Swiper */
 
@@ -65,6 +66,7 @@ a {
   font-weight: 900;
   color: gray;
   -webkit-text-stroke: 2px black;
+  
 }
 #header-logo-barcode {
   display: inline-block;
@@ -96,10 +98,19 @@ a {
   background-color: #00b2a9;
   transition: background-color 0.2s ease;
   transition: color 0.2s ease;
+  font-family: "Big Shoulders Text", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
 }
 #header-dropdown-button:active {
   background-color: #0e807a;
   color: white;
+}
+#header-dropdown-button:hover {
+  background-color: #0e807a;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.25s ease;
 }
 .header-dropdown {
   padding: 5px;
@@ -117,13 +128,17 @@ a {
   padding: 5px;
   border-radius: 4px;
   border: 2px solid #ef426f;
+  font-family: "Big Shoulders Text", sans-serif;
+  font-optical-sizing: auto;
+
 }
 #search-submit {
   background-color: #00b2a9;
   padding: 5px;
   border-radius: 4px;
   border: 2px solid #ef426f;
-  
+  font-family: "Big Shoulders Text", sans-serif;
+  font-optical-sizing: auto;
 }
 #search-submit:hover {
   background-color: #0e807a;
@@ -138,13 +153,17 @@ a {
   border-radius: 8px;
   justify-content: center;
   align-content: center;
+  font-family: "Bad Script", cursive;
+  font-weight: 900;
+  
 }
 .header-links:hover {
   color: white;
   background-color: rgba(0, 0, 0, .5);
   cursor: pointer;
   transition: background-color 0.25s ease;
-  
+  text-shadow: 0 0 5px #ef426f;
+  outline: 2px solid #00b2a9;
 }
 
 /* Header */
