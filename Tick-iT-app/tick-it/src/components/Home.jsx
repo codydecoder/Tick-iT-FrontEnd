@@ -56,7 +56,7 @@ export default function Home() {
       <div className='all-venues'>
         {allVenues.map((venue) => (
           <div className='home-card'>
-            <div className="venue-name">{venue.  name}</div>
+            <div className="venue-name">{venue.name}</div>
             <img className='venue-image' src={venue.image} alt='pic' />
           </div>
         ))}
