@@ -1,11 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Pacifico&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
 
-  /* max-width: 1280px; */
-/* margin: 0 auto; */
-/* padding: 2rem; */
-/* text-align: center; */
-/* }
+body {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
 
 /* Swiper */
 
@@ -96,6 +97,9 @@ a {
   background-color: #00b2a9;
   transition: background-color 0.2s ease;
   transition: color 0.2s ease;
+  font-family: "Big Shoulders Text", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
 }
 #header-dropdown-button:active {
   background-color: #0e807a;
@@ -117,13 +121,16 @@ a {
   padding: 5px;
   border-radius: 4px;
   border: 2px solid #ef426f;
+  font-family: "Big Shoulders Text", sans-serif;
+  font-optical-sizing: auto;
 }
 #search-submit {
   background-color: #00b2a9;
   padding: 5px;
   border-radius: 4px;
   border: 2px solid #ef426f;
-  
+  font-family: "Big Shoulders Text", sans-serif;
+  font-optical-sizing: auto;
 }
 #search-submit:hover {
   background-color: #0e807a;
@@ -138,13 +145,16 @@ a {
   border-radius: 8px;
   justify-content: center;
   align-content: center;
+  font-family: "Bad Script", cursive;
+  font-weight: 900;
 }
 .header-links:hover {
   color: white;
   background-color: rgba(0, 0, 0, .5);
   cursor: pointer;
   transition: background-color 0.25s ease;
-  
+  text-shadow: 0 0 5px #ef426f;
+  outline: 2px solid #00b2a9;
 }
 
 /* Header */
@@ -156,11 +166,14 @@ a {
   outline: 2px solid #00b2a9;
   padding: 18px;
   background-color: rgba(255, 160, 122, 1);
-
 }
 #footer-words {
-  font-size: 24px;
+  font-size: 32px;
   margin-bottom: 15px;
+  font-family: "Big Shoulders Text", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  -webkit-text-stroke: 1px #00b2a9;
 }
 #footer-nav {
   display: flex;
@@ -174,15 +187,19 @@ a {
   border-radius: 8px;
   font-size: 24px;
   font-weight: 900;
+  font-family: "Bad Script", cursive;
 }
 .footer-links:hover {
   outline: 2px solid #00b2a9;
   background-color: rgba(0, 0, 0, .25);
   text-decoration: underline;
   text-decoration-color: #0e807a;
+  text-shadow: 0 0 5px #ef426f;
 }
 .footer-github {
   font-size: 16px;
+  font-family: "Big Shoulders Text", sans-serif;
+  font-optical-sizing: auto;
 }
 
 /* Footer */
@@ -284,6 +301,9 @@ a {
   text-align: left;
 }
 
+/* venue-details.css */
+
+
 .venue-container button{
   background-color: lightsalmon;
   border-color: #ef426f;
@@ -295,6 +315,7 @@ a {
 }
 
 
+
 /* EventList.css */
 
 .event-list-container {
@@ -302,7 +323,6 @@ a {
   margin: 0 auto;
   padding: 20px;
   text-align: center;
-
 }
 
 .event-item {
@@ -310,6 +330,10 @@ a {
   border-radius: 5px;
   padding: 10px;
   margin-bottom: 10px;
+
+  font-family: "Big Shoulders Text", sans-serif;
+  font-optical-sizing: auto;
+
 }
 
 .event-item h2 {
@@ -317,9 +341,17 @@ a {
   margin-bottom: 5px;
 }
 
+.event-list-title {}
+.event-list-date {}
+.event-list-time {}
+.event-list-price {}
+.event-list-description {}
+.event-list-venue {}
+
 .bullet-point {
   list-style: none;
 }
+
 
 .event-image-container {
   width: 650px;
@@ -331,6 +363,7 @@ a {
   width: 650px;
   height: 300px;
 }
+
 
 /* EventDetails.css */
 
