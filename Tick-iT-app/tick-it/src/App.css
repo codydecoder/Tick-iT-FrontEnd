@@ -1,14 +1,16 @@
 
 body {
 
+
+  max-width: 1280px; 
+  margin: 0 auto; 
+  padding: 2rem; 
+  text-align: center;
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Pacifico&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
 
-  /* max-width: 1280px; */
-/* margin: 0 auto; */
-/* padding: 2rem; */
-/* text-align: center; */
-/* }
 
 /* Swiper */
 
@@ -194,7 +196,7 @@ a {
 /* Swiper */
 .swiper-slide {
   position: relative;
-
+}
 
 /* Venue List*/
 
