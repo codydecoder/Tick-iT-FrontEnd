@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Pacifico&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
 
 body {
-  max-width: 1280px;
+  max-width: 1400px;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
@@ -341,12 +341,12 @@ a {
   margin-bottom: 5px;
 }
 
-.event-list-title {}
+/* .event-list-title {}
 .event-list-date {}
 .event-list-time {}
 .event-list-price {}
 .event-list-description {}
-.event-list-venue {}
+.event-list-venue {} */
 
 .bullet-point {
   list-style: none;
@@ -394,12 +394,12 @@ a {
 .home {
   border: 5px solid #00b2a9;
   outline: 2px solid #ef426f;
-
 }
 
 .all-venues {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
 }
 
 .home-card {
