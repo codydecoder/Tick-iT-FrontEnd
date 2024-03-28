@@ -1,6 +1,6 @@
 import axios from 'axios'
 import { useEffect, useState } from 'react'
-import { useParams } from 'react-router-dom'
+import { Link, useParams } from 'react-router-dom'
 
 export default function VenueDetails() {
   
@@ -27,6 +27,9 @@ export default function VenueDetails() {
     <div>
       <div className="venue-details-container">
       <div className="venue-container">
+        <div className='button-div'>
+          <Link to="/venues"><button> ← </button></Link>
+        </div>
           <img src = {venues.image} width="750px"></img>
           <h2>{venues.name}</h2>
           <div className="data-lines">
