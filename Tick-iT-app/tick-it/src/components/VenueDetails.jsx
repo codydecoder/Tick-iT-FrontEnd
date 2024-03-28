@@ -27,12 +27,24 @@ export default function VenueDetails() {
     <div>
       <div className="venue-details-container">
       <div className="venue-container">
-          <img src = {venues.image} width="550px"></img>
+          <img src = {venues.image} width="750px"></img>
           <h2>{venues.name}</h2>
-          <p>Parking: {venues.parking}</p>
-          <p>Capacity: {venues.capacity}</p>
-          <p>{venues.description}</p>
-          <p>Policies: {venues.policies}</p>
+          <div className="data-lines">
+            <h3>Parking: </h3>
+            <p>{venues.parking}</p>
+          </div>
+          <div className="data-lines">
+            <h3>Capacity: </h3>
+            <p>{venues.capacity}</p>
+          </div>
+          <div className="data-lines">
+            <h3>Venue Description:</h3>
+            <p>{venues.description}</p>
+          </div>
+          <div className="data-lines">
+            <h3>Policies: </h3>
+            <p>{venues.policies}</p>
+          </div>
       </div>
     </div>
     </div>

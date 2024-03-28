@@ -50,13 +50,12 @@ export default function VenueList() {
               <div className='venue-info'>
                 <h3>{venue.name}</h3>
                 <img src = {venue.image} width="300px"></img>
-                <p>{venue.address}</p>
-                <p>Venue ID {venue.id}</p>
+                <p>Address: {venue.address}</p>
               </div>
 
               <div className='upcoming-events'>
-                {events.filter((event) => event.venue === venue.id).map((venueEvent =>             (<div key={venueEvent.name}>{venueEvent.name}</div>)))}
-
+                <h3>MARCH</h3>
+                {events.filter((event) => event.venue === venue.id).map((venueEvent =>             (<div key={venueEvent.name} className="upcoming-list">{venueEvent.name}</div>)))}
               </div>
 
             </div>
