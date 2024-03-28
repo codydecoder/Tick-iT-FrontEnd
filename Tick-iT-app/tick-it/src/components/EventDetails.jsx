@@ -1,5 +1,6 @@
-import React, { useState, useEffect} from "react"
+import React, { useState, useEffect, useContext} from "react"
 import axios from "axios"
+import DataContext from '../DataContext'
 import { Link, useParams } from "react-router-dom"
 
 
@@ -28,6 +29,7 @@ function EventDetails({match}) {
 
   return (
     <div className="event-details-container">
+      <button onClick = {()=>setmyEvents({event}) }>Save to My Events</button>
       <h1>{event.name}</h1>
       <p>Date: {event.date}</p>
       <p>Time: {event.time}</p>
@@ -39,6 +41,5 @@ function EventDetails({match}) {
     </div>
   )
 }
-
 
 export default EventDetails
