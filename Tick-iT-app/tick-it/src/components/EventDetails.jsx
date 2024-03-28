@@ -29,14 +29,16 @@ function EventDetails({match}) {
 
   return (
     <div className="event-details-container">
+      <div className='button-div'>
+        <Link to="/events"><button> ← </button></Link>
+      </div>
       <h1>{event.name}</h1>
       <p>Date: {event.date}</p>
       <p>Time: {event.time}</p>
       <p>Price: {event.price}</p>
-      <p>Description: {event.description}</p>
+      <p>Description: {event.description}</p>      
       <img src={event.image} alt={event.name} style={{ maxWidth: '100%' }} />
       <br></br>
-      <Link to="/events">Back to Event List</Link>
     </div>
   )
 }

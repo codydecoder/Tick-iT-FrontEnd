@@ -27,15 +27,16 @@ function EventList() {
         {events.map(event => (
           <li key={event.id}>
             <div className="event-item">
-            <h2 className="event-list-title">{event.name}</h2>
-            <p className="event-list-date">Date: {event.date}</p>
-            <p className="event-list-time">Time: {event.time}</p>
-            <p className="event-list-price">Price: {event.price}</p>
-            <p className="event-list-description">Description: {event.description}</p>
-            <p className="event-list-venue">Venue: {event.venue}</p>
-            <Link to={`/events/${event.id}`}>
-              <img src={event.image} alt={event.name} style={{maxWidth: '100%'} } />
-            </Link>
+              <h2 className="event-list-title">{event.name}</h2>
+              <p className="event-list-date">Date: {event.date}</p>
+              <p className="event-list-time">Time: {event.time}</p>
+              <p className="event-list-price">Price: {event.price}</p>
+              <p className="event-list-description">Description: {event.description}</p>
+              <Link to={`/events/${event.id}`}>
+              <div className='event-image-container'>
+                <img src={event.image} alt={event.name} />
+              </div>
+              </Link>
             </div>
           </li>
         ))}

@@ -239,6 +239,7 @@ a {
   padding: 10px;
   border-radius: 8px;
   font-size: 20px;
+  overflow: scroll;
 }
 
 .upcoming-list{
@@ -249,6 +250,10 @@ a {
   padding: 5px;
   line-height: 60px;
   overflow: scroll;
+}
+
+.upcoming-list::-webkit-scrollbar {
+  background-color: transparent;
 }
 
 /* venue-details.css */
@@ -279,6 +284,16 @@ a {
   text-align: left;
 }
 
+.venue-container button{
+  background-color: lightsalmon;
+  border-color: #ef426f;
+  font-size: 1.2rem;
+  width: 40px;
+  height: 28px;
+  margin-bottom: 10px;
+  margin-right: 5px;
+}
+
 
 /* EventList.css */
 
@@ -295,18 +310,26 @@ a {
   border-radius: 5px;
   padding: 10px;
   margin-bottom: 10px;
-  
 }
 
 .event-item h2 {
   margin-top: 0;
   margin-bottom: 5px;
-  
-  
 }
 
 .bullet-point {
   list-style: none;
+}
+
+.event-image-container {
+  width: 650px;
+  height: 300px;
+  margin: 0 auto;
+}
+
+.event-image-container img{
+  width: 650px;
+  height: 300px;
 }
 
 /* EventDetails.css */
@@ -317,6 +340,19 @@ a {
   padding: 20px;
   background-color: rgba(255, 160, 122, .5);
 }
+
+.event-details-container button{
+  background-color: lightsalmon;
+  border-color: #ef426f;
+  font-size: 1.2rem;
+  width: 40px;
+  height: 28px;
+}
+
+.button-div {
+  float: right;
+}
+
 
 /* Swiper ends */
 
