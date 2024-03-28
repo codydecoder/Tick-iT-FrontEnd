@@ -35,7 +35,6 @@ function EventDetails({match}) {
       <p>Time: {event.time}</p>
       <p>Price: {event.price}</p>
       <p>Description: {event.description}</p>
-      <p>Venue: {event.venue}</p>
       <img src={event.image} alt={event.name} style={{ maxWidth: '100%' }} />
       <br></br>
       <Link to="/events">Back to Event List</Link>
