@@ -341,12 +341,12 @@ a {
   margin-bottom: 5px;
 }
 
-.event-list-title {}
+/* .event-list-title {}
 .event-list-date {}
 .event-list-time {}
 .event-list-price {}
 .event-list-description {}
-.event-list-venue {}
+.event-list-venue {} */
 
 .bullet-point {
   list-style: none;
@@ -394,12 +394,12 @@ a {
 .home {
   border: 5px solid #00b2a9;
   outline: 2px solid #ef426f;
-
 }
 
 .all-venues {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
 }
 
 .home-card {
@@ -407,7 +407,6 @@ a {
   height: 300px;
   padding: 40px;
   justify-content: space-evenly;
-  margin: 0 auto;
 }
 
 .venue-image {
